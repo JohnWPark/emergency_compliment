@@ -20,8 +20,9 @@ var complimentsController = {
     res.redirect("/compliments")
 },
   edit: function(req, res){
-      var compliment = Compliment.find(req.params.id)
-      res.render('compliments/new.hbs')
+      res.render('compliments/edit.hbs', {
+          compliment: Compliment.find(req.params.id)
+      })
   }
 
  // update action code goes here...
