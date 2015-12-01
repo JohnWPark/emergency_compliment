@@ -25,6 +25,9 @@ var complimentsController = {
   }
 
  // update action code goes here...
+},
+update: function(req, res) {
+  // update action
 }
 
 module.exports = complimentsController;
